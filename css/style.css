@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: black;
+	color: white;
+}
+
+.header {
+    margin: 0;
+}
+
+.final-fantasy-menu {
+    text-decoration: none;
+    display: flex; /* Use flexbox for centering and row layout */
+    align-items: center; /* Center vertically */
+    list-style: none; /* Remove the bullet points */
+    padding: 0; /* Remove default padding */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.ff-fanbase-logo {
+    height: 100%;
+    width: 100%;
+}
+
+.final-fantasy-header {
+    background-color: black;
+    color: white;
+    padding: 0px;
+}
+
+/* Optional: Style the links in the menu */
+.final-fantasy-menu li {
+    margin-right: 20px;
+	font-weight: bold;
+	border-right: 1px solid silver; /* Add a vertical border line */
+    padding-right: 20px; /* Add some spacing to separate the text from the border */
+}
+
+/* Optional: Style the link color */
+.final-fantasy-menu li a {
+    text-decoration: none;
+    color: white;
+	transition: font-style 0.3s; /* Add a transition for smooth effect */
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-transform: uppercase; /* Set the default text transformation to uppercase */
+}
+
+.final-fantasy-menu li a:hover {
+    font-style: italic; /* Change font to italics on hover */
+	text-transform: lowercase;
+	color: #16acb2;
+}
+
+.final-fantasy-menu::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the thickness of the gradient border */
+    background-image: linear-gradient(to right, white, white, grey, grey);
+}
+
+.body-wrapper {
+	text-align: center;
+}
+
+.affiliate-pages {
+	list-style-type: none;
+	color: white;
+	margin-top: 200px;
+}
+
+.affiliate-pages li a {
+    color: white;
+    text-decoration: underline 1px red; /* Optional: remove underlines from links */
+}
+
+ .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+ .image-item {
+            text-align: center;
+        }
+
+ .image-item img {
+            width: 300px;
+            height: 450px;
+        }
+
+h1, h2 {
+	font-family: Arial;
+}

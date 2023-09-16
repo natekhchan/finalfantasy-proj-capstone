@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Final Fantasy Fan Sign Up Page</title>
+<head>
+<!-- Link to your external CSS file -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="header">
+<div class="final-fantasy-header">
+	<ul class="final-fantasy-menu">
+	<li><a href="index.html"><img src="assets/ff-fanbase-logo.png" class="ff-fanbase-logo"></a></li>
+	<li><img src="assets/collage-final-fantasy.jpg" class="ff-characters-lineup"</li>	
+     <li><a href="index.html">HOME</a></li>
+    <li><a href="fanpages.html".html">FAN PAGES</a></li>
+    <li><a href="fanart.html">FAN ART</a></li>
+    <li><a href="signup.html">SIGN UP</a></li>	
+</ul>
+	<div class="body-wrapper"><h1>Sign Up</h1></div>
+	 <form action="process_signup.php" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <br>
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+        <br>
+        
+        <button type="submit">Sign Up</button>
+	
+</body>
+</html>
